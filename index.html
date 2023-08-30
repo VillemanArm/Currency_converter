@@ -17,10 +17,10 @@
 <body>
     <section class="converter">
         <h1>currensy converter</h1>
-        <form class="converter__input">
+        <form class="converter__input converter__block">
             <h2>From</h2>
             <div class="converter__currency-line">
-                <input type="number" class="converter__currncy-amount"></input>
+                <input type="text" size='12' class="converter__currency-amount"></input>
                 <select class="converter__currency">
                     <option value="RUB">RUB</option>
                     <option value="USD">USD</option>
@@ -28,13 +28,16 @@
                 </select>
             </div>
             <button type="submit" class="convert">
-                <img src="./img/twocirclingarrows1_120592.svg" alt="">
+                <div>
+                    <img src="./img/twocirclingarrows1_120592.svg" alt="">
+                </div>
+
             </button>
         </form>
-        <div class="converter__output">
+        <div class="converter__output converter__block">
             <h2>To</h2>
             <div class="converter__currency-line">
-                <input type="number" class="converter__currncy-amount"></input>
+                <div class="converter__result"></div>
                 <select class="converter__currency">
                     <option value="RUB">RUB</option>
                     <option value="USD">USD</option>
