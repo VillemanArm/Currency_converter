@@ -397,7 +397,7 @@ h2 {
   background-color: #74c9ed;
 }
 
-.convert {
+.converter__convert {
   width: 8rem;
   height: 8rem;
   position: absolute;
@@ -411,11 +411,11 @@ h2 {
   border: none;
   -webkit-tap-highlight-color: transparent;
 }
-.convert:active {
+.converter__convert:active {
   border: none;
   outline: none;
 }
-.convert > div {
+.converter__convert > div {
   width: 6rem;
   height: 6rem;
   position: absolute;
@@ -427,6 +427,7 @@ h2 {
 .converter__output {
   margin-top: 2rem;
   background-color: #7cf7bc;
+  overflow: hidden;
 }
 
 .rotate {
@@ -478,11 +479,11 @@ h2 {
     font-size: 2rem;
     border-bottom: 0.2rem solid #000;
   }
-  .convert {
+  .converter__convert {
     width: 7rem;
     height: 7rem;
   }
-  .convert > div {
+  .converter__convert > div {
     width: 5.4rem;
     height: 5.4rem;
   }
