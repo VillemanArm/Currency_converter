@@ -22,6 +22,7 @@ h1
 
     font-size: 2.8rem
     text-align: center
+    text-transform: uppercase
     
     color: #fff
 
@@ -35,10 +36,12 @@ h2
 
     background-color: #3f3e40
 
+        
+
 .converter__block
     width: 40rem
     height: 16rem
-    padding: 1.6rem 2rem 3.6rem 2rem
+    padding: 1.6rem 2rem 3.8rem 2rem
     display: grid
     align-content: space-between 
 
@@ -51,11 +54,13 @@ h2
     justify-content: space-between
 
 .converter__currency-amount
+    width: 18rem
+
+    font-size: 2.4rem
+
     background-color: transparent
     border: none
     border-bottom: 0.3rem solid #000
-
-    font-size: 2.4rem
 
 .converter__currency-amount:focus
     outline: none
@@ -92,6 +97,15 @@ h2
 
     background-color: #000
     border-radius: 50%
+    cursor: pointer
+    outline: none
+    border: none
+    -webkit-tap-highlight-color: transparent
+
+    &:active
+        border: none
+        outline: none
+
 
     &>div
         width: 6rem
@@ -101,14 +115,75 @@ h2
         left: 50%
         transform: translate(-50%, -50%) rotate(90deg)
 
+
 .converter__output
     margin-top: 2rem
     background-color: #7cf7bc
+
+.rotate
+    animation-name: rotation
+    animation-duration: 0.3s
+    animation-timing-function: linear
+    animation-iteration-count: 1
+
+@keyframes rotation 
+    from 
+        transform: translate(-50%, -50%) rotate(0deg)
+       
+    to 
+        transform: translate(-50%, -50%) rotate(180deg)
+
 
 @media (max-width: 48em)
     html 
         font-size: 3.125vw
     
+    h1
+        margin: 0 0 1.2rem 0
+
+        font-size: 2.2rem
+
+    h2
+        font-size: 2rem
+        margin: 0
+
+    .converter
+        padding: 1rem
+
+    .converter__block
+        width: 30rem
+        height: 12rem
+        padding: 1.2rem 1.6rem 3.4rem 1.6rem
+
+        border-radius: 1.4rem
+
+    .converter__currency-amount
+        width: 14rem
+       
+        font-size: 2rem
+
+        border-bottom: 0.2rem solid #000
+
+    .converter__currency
+        font-size: 2rem
+
+    .converter__result 
+        width: 14rem
+
+        font-size: 2rem
+
+        border-bottom: 0.2rem solid #000
+
+    .convert 
+        width: 7rem
+        height: 7rem
+
+        &>div
+            width: 5.4rem
+            height: 5.4rem
+
+    .converter__output
+        margin-top: 1.6rem
 
 
         
